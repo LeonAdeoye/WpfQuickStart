@@ -7,7 +7,7 @@ using Unity;
 
 namespace WpfQuickStart
 {
-    sealed class RequestForQuoteBootstrapper : UnityBootstrapper
+    sealed class Bootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
