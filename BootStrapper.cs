@@ -1,21 +1,50 @@
-﻿using Prism.Unity;
+﻿using CommonServiceLocator;
+using Prism.Modularity;
+using Prism.Unity;
+using System;
 using System.Windows;
 using Unity;
-using WpfQuickStart.SharedServices;
 
 namespace WpfQuickStart
 {
-    class BootStrapper : UnityBootstrapper
+    sealed class RequestForQuoteBootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
-            return null; // ServiceLocator.Current.GetInstance<Shell>();
+            return Container.Resolve<MainWindow>();
         }
 
-        protected override void ConfigureContainer()
+        protected override void InitializeShell()
         {
-            base.ConfigureContainer();
-            this.Container.RegisterInstance(typeof(LoggingService), "LoggingService", new LoggingService());
+            base.InitializeShell();
+            App.Current.MainWindow = (Window)this.Shell;
+            App.Current.MainWindow.Show();
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
+        }
+
+        protected override void InitializeModules()
+        {
+            try
+            {
+                base.InitializeModules();
+                RegisterAllPopups();
+            }
+            catch (ModuleInitializeException)
+            {
+                MessageBox.Show("Failed to initialize modules needed by RequestForQuote application. Catastrophic failure. Shutting down now!");
+                Environment.Exit(0);
+            }
+        }
+        /// <summary>
+        /// Registers the various window popups used by the application usig the unity container.
+        /// </summary>
+        private void RegisterAllPopups()
+        {
+            //Container.RegisterType<IWindowPopup, RequestForQuoteDetailsWindow>(WindowPopupNames.REQUEST_DETAIL_WINDOW_POPUP);
         }
     }
 }

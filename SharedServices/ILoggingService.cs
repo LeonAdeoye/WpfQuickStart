@@ -10,13 +10,13 @@ namespace WpfQuickStart.SharedServices
     {
         TRACE = 0,
         DEBUG = 1,
-        METRIC = 2,
         INFO = 3,
         WARN = 4,
         ERROR = 5
     }
     interface ILoggingService
     {
-        void log(string component, string message, LOG_LEVEL logLevl, string key = "");
+        void LogMessage(string component, string message, LOG_LEVEL logLevel);
+        void LogMetric(string component, string metricKey, long metricValue);
     }
 }
