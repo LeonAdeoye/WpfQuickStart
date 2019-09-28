@@ -85,7 +85,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BootStrapper.cs" />
     <Compile Include="MainModule\HeaderAccordionPanelUserControl.xaml.cs">
       <DependentUpon>HeaderAccordionPanelUserControl.xaml</DependentUpon>
     </Compile>
@@ -98,12 +97,14 @@
       <DependentUpon>MainBodyUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainModule\MainBodyViewModel.cs" />
+    <Compile Include="MainModule\MainModule.cs" />
     <Compile Include="SharedServices\ConfigurationService.cs" />
     <Compile Include="SharedServices\IConfigurationService.cs" />
     <Compile Include="SharedServices\IMessageService.cs" />
     <Compile Include="SharedServices\LoggingService.cs" />
     <Compile Include="SharedServices\ILoggingService.cs" />
     <Compile Include="SharedServices\MessageService.cs" />
+    <Compile Include="SharedServices\SharedServicesModule.cs" />
     <Page Include="MainModule\HeaderAccordionPanelUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

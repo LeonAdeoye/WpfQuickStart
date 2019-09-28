@@ -8,5 +8,9 @@ namespace WpfQuickStart.MainModule
 {
     class MainBodyViewModel
     {
+        MainBodyViewModel()
+        {
+                
+        }
     }
 }
