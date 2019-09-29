@@ -13,10 +13,7 @@ namespace WpfQuickStart.SharedServices
 
         public SharedServicesModule(IEventAggregator eventAggregator)
         {
-            if (eventAggregator == null)
-                throw new ArgumentNullException("eventAggregator");
-
-            this.eventAggregator = eventAggregator;
+            this.eventAggregator = eventAggregator ?? throw new ArgumentNullException("eventAggregator");
         }
 
         public void OnInitialized(IContainerProvider containerProvider)
