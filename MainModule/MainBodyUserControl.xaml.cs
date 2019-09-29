@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unity;
 
 namespace WpfQuickStart.MainModule
 {
@@ -20,10 +21,10 @@ namespace WpfQuickStart.MainModule
     /// </summary>
     public partial class MainBodyUserControl : UserControl
     {
-        public MainBodyUserControl()
+        public MainBodyUserControl(IUnityContainer container)
         {
             InitializeComponent();
-            this.DataContext = new MainBodyViewModel();
+            this.DataContext = container.Resolve<MainBodyViewModel>();
         }
     }
 }
