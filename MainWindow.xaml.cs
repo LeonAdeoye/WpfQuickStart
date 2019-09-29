@@ -23,11 +23,9 @@ namespace WpfQuickStart
     public partial class MainWindow : Window
     {
         private readonly MainWindowViewModel _mainWindowViewModel;
-        private readonly IModuleManager _moduleManager;
-        public MainWindow(IModuleManager moduleManager)
+        public MainWindow()
         {
             InitializeComponent();
-            this._moduleManager = moduleManager;
             this._mainWindowViewModel = new MainWindowViewModel();
             DataContext = this._mainWindowViewModel;
         }
