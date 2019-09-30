@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfQuickStart.Properties
+namespace InterfacesModuleLibrary.Properties
 {
 
 
