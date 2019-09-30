@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <TabControl>
+            <!--TODO: name tabs-->
+            <TabItem Header="Super Heroes"></TabItem>
+            <TabItem Header="Villians"></TabItem>
+        </TabControl>
     </Grid>
 </UserControl>

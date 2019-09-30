@@ -5,8 +5,39 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfQuickStart.MainModule"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Background="#404040" Height="120">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Foreground="White" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Verdana" VerticalAlignment="Center" BorderThickness="0">
+            <!--TODO : Change name of app-->
+            Quick Start
+        </GroupBox>
+        <GroupBox Grid.Row="1" Grid.Column="1" BorderThickness="0" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Width="200" TextAlignment="Center" BorderBrush="#404040">Enter text to filter...</TextBox>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="0" Grid.Column="2" BorderThickness="0">
+            <DockPanel>
+                <Button Background="LightGray" Width="30" DockPanel.Dock="Right" Height="20" FontSize="14" FontWeight="Bold">
+                    <Button.Content>x</Button.Content>
+                </Button>
+                <Button Background="LightGray" Width="30" DockPanel.Dock="Right" Height="20" HorizontalAlignment="Right" FontSize="14" FontWeight="Bold">
+                    <Button.Content>-</Button.Content>
+                </Button>
+                <Button Background="LightGray" Width="30" DockPanel.Dock="Right" Height="20" HorizontalAlignment="Right" FontSize="14" FontWeight="Bold">
+                    <Button.Content>...</Button.Content>
+                </Button>
+            </DockPanel>
+        </GroupBox>
     </Grid>
 </UserControl>

@@ -31,20 +31,13 @@ namespace WpfQuickStart
             try
             {
                 base.InitializeModules();
-                RegisterAllPopups();
             }
             catch (ModuleInitializeException)
             {
-                MessageBox.Show("Failed to initialize modules needed by RequestForQuote application. Catastrophic failure. Shutting down now!");
+                // TODO: Rename app to something other than QuickStart.
+                MessageBox.Show("Failed to initialize modules needed by {0} application. Catastrophic failure. Shutting down now!", "QuickStart");
                 Environment.Exit(0);
             }
-        }
-        /// <summary>
-        /// Registers the various window popups used by the application usig the unity container.
-        /// </summary>
-        private void RegisterAllPopups()
-        {
-            //Container.RegisterType<IWindowPopup, RequestForQuoteDetailsWindow>(WindowPopupNames.REQUEST_DETAIL_WINDOW_POPUP);
         }
     }
 }
