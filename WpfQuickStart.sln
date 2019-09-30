@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfQuickStart", "WpfQuickSt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3063A3D5-F6BB-45A1-9F52-F494AC1884C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainModuleLibrary", "..\MainModuleLibrary\MainModuleLibrary.csproj", "{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesModuleLibrary", "InterfacesModuleLibrary\InterfacesModuleLibrary.csproj", "{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedServicesModuleLibrary", "..\SharedServicesModuleLibrary\SharedServicesModuleLibrary.csproj", "{31F4E3DB-F5AC-498C-9272-125B55AB547A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedServicesModuleLibrary", "SharedServicesModuleLibrary\SharedServicesModuleLibrary.csproj", "{31F4E3DB-F5AC-498C-9272-125B55AB547A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesModuleLibrary", "..\InterfacesModuleLibrary\InterfacesModuleLibrary.csproj", "{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainModuleLibrary", "MainModuleLibrary\MainModuleLibrary.csproj", "{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,18 +23,18 @@ Global
 		{39D618FE-2788-4CE8-BDD7-3EB92B2D1071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D618FE-2788-4CE8-BDD7-3EB92B2D1071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D618FE-2788-4CE8-BDD7-3EB92B2D1071}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A260FA2B-70C4-4FDB-A33C-CDC6B680C34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F4E3DB-F5AC-498C-9272-125B55AB547A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0D2D4D-6738-4F11-AD7D-CD27E178B82E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

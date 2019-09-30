@@ -2,3 +2,16 @@
 /obj
 /bin
 /packages
+/SharedServicesModuleLibrary/bin
+/SharedServicesModuleLibrary/obj
+/SharedServicesModuleLibrary/.vs
+/SharedServicesModuleLibrary/packages
+/MainModuleLibrary/bin
+/MainModuleLibrary/obj
+/MainModuleLibrary/.vs
+/MainModuleLibrary/packages
+/InterfacesModuleLibrary/bin
+/InterfacesModuleLibrary/obj
+/InterfacesModuleLibrary/.vs
+/InterfacesModuleLibrary/packages
+
